@@ -90,8 +90,8 @@ MyData data;
 void set_data() {
  receiver_input_channel_3 = map(data.throttle, 6, 255, 1000, 2000);
  receiver_input_channel_4 = map(data.yaw,      0, 255, 1000, 2000);
- receiver_input_channel_1 = map(data.pitch,   2, 255, 1000, 2000);                     // Map the pilot's desired angle
- receiver_input_channel_2  = map(data.roll,    0, 255, 1000 , 2000);                    // Map the pilot's desired angle
+ receiver_input_channel_1 = map(data.pitch,   2, 255, 1000, 2000);                     
+ receiver_input_channel_2  = map(data.roll,    0, 255, 1000 , 2000);                   
   switches = data.switches & 0x1 ? 2000 : 1000;
 }
 
